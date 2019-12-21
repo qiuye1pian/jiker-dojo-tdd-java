@@ -17,17 +17,10 @@ class Gamer {
         if (numberContainsTarget(index, 5) && numberContainsTarget(index, 3)) {
             return "FizzBuzz";
         }
-        if (numberIsMultiplyBy(index, 3)) {
+        if (shouldBeFizz(index)) {
             return "Fizz";
         }
-        if (numberContainsTarget(index, 3)) {
-            return "Fizz";
-        }
-
-        if (numberIsMultiplyBy(index, 5)) {
-            return "Buzz";
-        }
-        if (numberContainsTarget(index, 5)) {
+        if (shouldBeBuzz(index)) {
             return "Buzz";
         }
         return Integer.toString(index);
@@ -40,4 +33,13 @@ class Gamer {
     private boolean numberContainsTarget(int number, int target) {
         return Integer.toString(number).contains(Integer.toString(target));
     }
+
+    private boolean shouldBeFizz(int index) {
+        return numberIsMultiplyBy(index, 3) || numberContainsTarget(index, 3);
+    }
+
+    private boolean shouldBeBuzz(int index) {
+        return numberIsMultiplyBy(index, 5) || numberContainsTarget(index, 5);
+    }
+
 }
