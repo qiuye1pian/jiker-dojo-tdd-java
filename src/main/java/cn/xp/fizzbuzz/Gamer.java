@@ -12,6 +12,10 @@ public class Gamer {
         {
             return "Fizz";
         }
+        if(index == 5)
+        {
+            return "Buzz";
+        }
         return Integer.toString(index);
     }
 }
