@@ -8,13 +8,7 @@ class Gamer {
     }
 
     String print() {
-        if (numberIsMultiplyBy(index, 15)) {
-            return "FizzBuzz";
-        }
-        if (index == 51 || index == 54 || index == 57) {
-            return "FizzBuzz";
-        }
-        if (numberContainsTarget(index, 5) && numberContainsTarget(index, 3)) {
+        if (shouldBeFizzBuzz(index)) {
             return "FizzBuzz";
         }
         if (shouldBeFizz(index)) {
@@ -40,6 +34,10 @@ class Gamer {
 
     private boolean shouldBeBuzz(int index) {
         return numberIsMultiplyBy(index, 5) || numberContainsTarget(index, 5);
+    }
+
+    private boolean shouldBeFizzBuzz(int index) {
+        return shouldBeFizz(index) && shouldBeBuzz(index);
     }
 
 }
