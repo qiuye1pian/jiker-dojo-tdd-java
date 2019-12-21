@@ -13,19 +13,21 @@ class Gamer {
         if (numberIsMultiplyBy(index, 15)) {
             return "FizzBuzz";
         }
-        if (index == 53 || index == 35) {
+        if (numberContainsTarget(index, 5) && numberContainsTarget(index, 3)) {
             return "FizzBuzz";
         }
+
         if (numberIsMultiplyBy(index, 3)) {
             return "Fizz";
         }
-        if (Integer.toString(index).contains("3")) {
+        if (numberContainsTarget(index, 3)) {
             return "Fizz";
         }
-        if (Integer.toString(index).contains("5")) {
+
+        if (numberIsMultiplyBy(index, 5)) {
             return "Buzz";
         }
-        if (numberIsMultiplyBy(index, 5)) {
+        if (numberContainsTarget(index, 5)) {
             return "Buzz";
         }
         return Integer.toString(index);
@@ -33,5 +35,9 @@ class Gamer {
 
     private boolean numberIsMultiplyBy(int number, int by) {
         return number % by == 0;
+    }
+
+    private boolean numberContainsTarget(int number, int target) {
+        return Integer.toString(number).contains(Integer.toString(target));
     }
 }
