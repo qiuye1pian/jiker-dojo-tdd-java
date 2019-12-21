@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 
 public class FizzBuzzTest {
 
-    private static final String FizzBuzz = "FizzBuzz";
+    private static final String FIZZ_BUZZ = "FIZZ_BUZZ";
 
     @Test
     public void test_should_be_number_when_1() {
@@ -86,7 +86,7 @@ public class FizzBuzzTest {
         //When
         gamer = new Gamer(15);
         //Then
-        assertEquals(FizzBuzz, gamer.print());
+        assertEquals(FIZZ_BUZZ, gamer.print());
     }
 
     @Test
@@ -96,7 +96,7 @@ public class FizzBuzzTest {
         //When
         gamer = new Gamer(30);
         //Then
-        assertEquals(FizzBuzz, gamer.print());
+        assertEquals(FIZZ_BUZZ, gamer.print());
     }
 
     @Test
@@ -126,7 +126,7 @@ public class FizzBuzzTest {
         //When
         gamer = new Gamer(53);
         //Then
-        assertEquals(FizzBuzz, gamer.print());
+        assertEquals(FIZZ_BUZZ, gamer.print());
     }
 
     @Test
@@ -136,7 +136,7 @@ public class FizzBuzzTest {
         //When
         gamer = new Gamer(35);
         //Then
-        assertEquals(FizzBuzz, gamer.print());
+        assertEquals(FIZZ_BUZZ, gamer.print());
     }
 
     @Test
@@ -146,7 +146,7 @@ public class FizzBuzzTest {
         //When
         gamer = new Gamer(51);
         //Then
-        assertEquals(FizzBuzz, gamer.print());
+        assertEquals(FIZZ_BUZZ, gamer.print());
     }
 
     @Test
@@ -156,7 +156,7 @@ public class FizzBuzzTest {
         //When
         gamer = new Gamer(54);
         //Then
-        assertEquals(FizzBuzz, gamer.print());
+        assertEquals(FIZZ_BUZZ, gamer.print());
     }
 
     @Test
@@ -166,7 +166,7 @@ public class FizzBuzzTest {
         //When
         gamer = new Gamer(57);
         //Then
-        assertEquals(FizzBuzz, gamer.print());
+        assertEquals(FIZZ_BUZZ, gamer.print());
     }
 
 }
