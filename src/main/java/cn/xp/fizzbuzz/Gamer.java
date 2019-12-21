@@ -11,7 +11,7 @@ class Gamer {
         if (index % 3 == 0) {
             return "Fizz";
         }
-        if (index == 5 || index == 10) {
+        if (index % 5 == 0) {
             return "Buzz";
         }
         return Integer.toString(index);
