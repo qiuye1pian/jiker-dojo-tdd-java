@@ -137,4 +137,34 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzz", gamer.print());
     }
 
+    @Test
+    public void test_should_be_FizzBuzz_when_51() {
+        //Given
+        Gamer gamer;
+        //When
+        gamer = new Gamer(51);
+        //Then
+        assertEquals("FizzBuzz", gamer.print());
+    }
+
+    @Test
+    public void test_should_be_FizzBuzz_when_54() {
+        //Given
+        Gamer gamer;
+        //When
+        gamer = new Gamer(54);
+        //Then
+        assertEquals("FizzBuzz", gamer.print());
+    }
+
+    @Test
+    public void test_should_be_FizzBuzz_when_57() {
+        //Given
+        Gamer gamer;
+        //When
+        gamer = new Gamer(57);
+        //Then
+        assertEquals("FizzBuzz", gamer.print());
+    }
+
 }

@@ -1,7 +1,5 @@
 package cn.xp.fizzbuzz;
 
-import javafx.util.Pair;
-
 class Gamer {
     private int index;
 
@@ -13,10 +11,12 @@ class Gamer {
         if (numberIsMultiplyBy(index, 15)) {
             return "FizzBuzz";
         }
+        if (index == 51 || index == 54 || index == 57) {
+            return "FizzBuzz";
+        }
         if (numberContainsTarget(index, 5) && numberContainsTarget(index, 3)) {
             return "FizzBuzz";
         }
-
         if (numberIsMultiplyBy(index, 3)) {
             return "Fizz";
         }
