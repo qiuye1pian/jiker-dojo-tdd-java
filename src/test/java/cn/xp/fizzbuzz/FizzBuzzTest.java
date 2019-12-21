@@ -127,4 +127,14 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzz", gamer.print());
     }
 
+    @Test
+    public void test_should_be_FizzBuzz_when_35() {
+        //Given
+        Gamer gamer;
+        //When
+        gamer = new Gamer(35);
+        //Then
+        assertEquals("FizzBuzz", gamer.print());
+    }
+
 }

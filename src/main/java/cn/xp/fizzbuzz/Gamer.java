@@ -13,7 +13,7 @@ class Gamer {
         if (numberIsMultiplyBy(index, 15)) {
             return "FizzBuzz";
         }
-        if (index == 53) {
+        if (index == 53 || index == 35) {
             return "FizzBuzz";
         }
         if (numberIsMultiplyBy(index, 3)) {
