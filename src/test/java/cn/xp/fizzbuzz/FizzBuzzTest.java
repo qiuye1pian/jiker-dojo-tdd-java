@@ -88,4 +88,17 @@ public class FizzBuzzTest {
     }
 
 
+
+    @Test
+    public void test_should_be_FizzBuzz_when_30() {
+        //Given
+        Gamer gamer;
+        //When
+        gamer = new Gamer(30);
+        //Then
+        assertEquals("FizzBuzz", gamer.print());
+    }
+
+
+
 }
