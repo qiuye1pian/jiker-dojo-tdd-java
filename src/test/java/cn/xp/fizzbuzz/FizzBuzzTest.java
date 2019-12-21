@@ -16,4 +16,15 @@ public class FizzBuzzTest {
         //Then
         assertEquals("1", gamer.print());
     }
+
+    @Test
+    public void test_should_be_number_when_2()
+    {
+        //Given
+        Gamer gamer;
+        //When
+        gamer = new Gamer(2);
+        //Then
+        assertEquals("2", gamer.print());
+    }
 }
