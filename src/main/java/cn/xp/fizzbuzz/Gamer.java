@@ -8,12 +8,16 @@ class Gamer {
     }
 
     String print() {
-        if (index % 3 == 0) {
+        if (numberIsMultiplyBy(index, 3)) {
             return "Fizz";
         }
-        if (index % 5 == 0) {
+        if (numberIsMultiplyBy(index, 5)) {
             return "Buzz";
         }
         return Integer.toString(index);
+    }
+
+    private boolean numberIsMultiplyBy(int number, int by) {
+        return number % by == 0;
     }
 }
