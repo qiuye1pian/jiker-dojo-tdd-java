@@ -20,6 +20,10 @@ class Gamer {
         {
             return "Fizz";
         }
+        if(Integer.toString(index).contains("5"))
+        {
+            return "Buzz";
+        }
         if (numberIsMultiplyBy(index, 5)) {
             return "Buzz";
         }
