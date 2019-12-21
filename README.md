@@ -17,3 +17,7 @@
  - Mac、Linux、WSL 或者 Msys2（Git Bash）： `./gradlew clean build`
  - Windows（cmd）：`gradlew clean build`
 
+
+##
+练习题目：FizzBuzz
+
