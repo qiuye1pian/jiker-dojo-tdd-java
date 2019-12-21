@@ -1,5 +1,7 @@
 package cn.xp.fizzbuzz;
 
+import javafx.util.Pair;
+
 class Gamer {
     private int index;
 
@@ -8,6 +10,9 @@ class Gamer {
     }
 
     String print() {
+        if (numberIsMultiplyBy(index, 15)) {
+            return "FizzBuzz";
+        }
         if (numberIsMultiplyBy(index, 3)) {
             return "Fizz";
         }
