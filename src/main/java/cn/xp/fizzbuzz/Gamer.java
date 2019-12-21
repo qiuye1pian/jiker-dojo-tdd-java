@@ -8,10 +8,10 @@ class Gamer {
     }
 
     String print() {
-        if (index == 3 || index == 6) {
+        if (index % 3 == 0) {
             return "Fizz";
         }
-        if (index == 5|| index == 10) {
+        if (index == 5 || index == 10) {
             return "Buzz";
         }
         return Integer.toString(index);
