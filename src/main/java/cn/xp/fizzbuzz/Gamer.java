@@ -1,13 +1,13 @@
 package cn.xp.fizzbuzz;
 
-public class Gamer {
-    int index;
+class Gamer {
+    private int index;
 
-    public Gamer(int i) {
+    Gamer(int i) {
         index = i;
     }
 
-    public String print() {
+    String print() {
         if (index == 3 || index == 6) {
             return "Fizz";
         }
