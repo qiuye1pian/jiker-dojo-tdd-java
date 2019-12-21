@@ -87,8 +87,6 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzz", gamer.print());
     }
 
-
-
     @Test
     public void test_should_be_FizzBuzz_when_30() {
         //Given
@@ -98,7 +96,6 @@ public class FizzBuzzTest {
         //Then
         assertEquals("FizzBuzz", gamer.print());
     }
-
 
     @Test
     public void test_should_be_Fizz_when_31() {
@@ -120,5 +117,14 @@ public class FizzBuzzTest {
         assertEquals("Buzz", gamer.print());
     }
 
+    @Test
+    public void test_should_be_FizzBuzz_when_53() {
+        //Given
+        Gamer gamer;
+        //When
+        gamer = new Gamer(53);
+        //Then
+        assertEquals("FizzBuzz", gamer.print());
+    }
 
 }

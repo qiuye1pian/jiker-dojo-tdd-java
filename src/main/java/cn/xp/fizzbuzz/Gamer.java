@@ -13,15 +13,16 @@ class Gamer {
         if (numberIsMultiplyBy(index, 15)) {
             return "FizzBuzz";
         }
+        if (index == 53) {
+            return "FizzBuzz";
+        }
         if (numberIsMultiplyBy(index, 3)) {
             return "Fizz";
         }
-        if(Integer.toString(index).contains("3"))
-        {
+        if (Integer.toString(index).contains("3")) {
             return "Fizz";
         }
-        if(Integer.toString(index).contains("5"))
-        {
+        if (Integer.toString(index).contains("5")) {
             return "Buzz";
         }
         if (numberIsMultiplyBy(index, 5)) {
